@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dog Daycare</title>
+    <title>JS form validation</title>
     <!--font awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--custom css-->
@@ -11,38 +11,26 @@
 </head>
 
 <body>
-    <section id="header">
-        <header>
-            <div class="header-container">
-                <h1><i class="fa fa-paw" aria-hidden="true"></i>Pawster</h1>
+    <div class="container">
+        <form action="post" id="form-body">
+            <input type="text" id="name" placeholder="Your Name">*
+            <input type="email" id="email" placeholder="E-mail">*
+            <input type="number" id="phone" placeholder="Telephone">
+            <textarea id="message">
+                    </textarea>
+            <div class="check"><input type="checkbox" id="agree-1"><label for="agree-1">1st agreement*</label>
             </div>
-            <div class="header-container">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <p>Call us</p>
-                <h3>10 268 876 478</h3>
+
+            <div class="check">
+                <input type="checkbox" id="agree-2"><label for="agree-2">2st agreement</label>
             </div>
-        </header>
-    </section>
 
-
-    <section id="main">
-        <div class="container">
-           <h2>We can take good care of your dog, while you're at work</h2>
-           <p>Just fill this form</p>
-            <form action="post" id="lp-form">
-                <input type="text" id="name" placeholder="Your Name">
-                <input type="text" id="dog-name" placeholder="Your Dog's Name">
-                <input type="text" id="phone" placeholder="Phone">
-                <input type="email" id="mail" placeholder="E-mail">
-                <input type="submit" id="btn-submit" value="Woof!">
-            </form>
-        </div>
-    </section>
-
-    <section id="footer">
-
-    </section>
-
+            <div class="check">
+                <input type="checkbox" id="agree-all"><label for="agree-all">Check all agreements</label>
+            </div>
+            <input type="submit" id="btn" value="Send">
+        </form>
+    </div>
     <script src="js/main.js"></script>
 </body>
 

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-repeat: no-repeat;
+    font-family: 'Bree Serif', serif;
+    color: #606060;
+}
+
+div.container {
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 10px 0px rgba(48,48,48,0.15);
+    margin: 0 auto;
+    width: 40%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+input[type="checkbox"] {
+        display: inline;
+    }
+
