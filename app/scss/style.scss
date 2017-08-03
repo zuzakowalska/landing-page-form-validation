@@ -1,40 +1,81 @@
 @import url('https://fonts.googleapis.com/css?family=Asap');
 $main-font: "Asap" , "serif";
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     background-repeat: no-repeat;
     font-family: $main-font;
     color: #606060;
+    font-size: 0.8em;
 }
 
 div.container {
     background-color: rgba(255, 255, 255, 0);
-    box-shadow: 0px 0px 10px 0px rgba(48,48,48,0.15);
+    border: 1px solid #ffffff;
+//    box-shadow: 0px 0px 10px 0px rgba(48,48,48,0.15);
     margin: 0 auto;
-    width: 40%;
+    width: 40vw;
     padding: 1em;
-    display: flex;
-    justify-content: center;
-    
+
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
     
 }
 
 input {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    margin-bottom: 1em;
+    border: 1px solid #fff;
+    padding: 0 0 0 1em;
+    color: #fff;
+    background: none;
+    
        
     &::placeholder {
         font-family: $main-font;
+        color: #fff;
     }
     
     &[type="checkbox"] {
-        display: inline;
+//        display: inline;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        
     }
+    
+    &[type="submit"] {
+        margin-top: 1em;
+        background-color: #fff;
+        color: #27263d;
+        cursor: pointer;
+        height: 50px;
+    }
+    
 }
 
+.check {
+    margin-bottom: 1em;
+}
 
+label {
+   position:relative;
+   padding-left:30px; 
+    display:block;
+}
 
-
- 
+label input[type=checkbox] {
+   position:absolute;
+   top:-5px;
+   left:0px; 
+}

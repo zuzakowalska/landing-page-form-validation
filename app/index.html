@@ -12,21 +12,21 @@
 
 <body>
     <div class="container">
+       <h1>Contact Form</h1>
         <form action="post" id="form-body">
-            <input type="text" id="name" placeholder="Your Name">*
-            <input type="email" id="email" placeholder="E-mail">*
+            <input type="text" id="name" placeholder="Your Name*">
+            <input type="email" id="email" placeholder="E-mail*">
             <input type="number" id="phone" placeholder="Telephone">
-            <textarea id="message">
-                    </textarea>
-            <div class="check"><input type="checkbox" id="agree-1"><label for="agree-1">1st agreement*</label>
+                    <p>* Required Fields</p>
+            <label for="agree-1"><input type="checkbox" id="agree-1">1st agreement*</label>
+
+
+            <div class="check">
+                <label for="agree-2"><input type="checkbox" id="agree-2">2st agreement</label>
             </div>
 
             <div class="check">
-                <input type="checkbox" id="agree-2"><label for="agree-2">2st agreement</label>
-            </div>
-
-            <div class="check">
-                <input type="checkbox" id="agree-all"><label for="agree-all">Check all agreements</label>
+                <label for="agree-all"><input type="checkbox" id="agree-all">Check all agreements</label>
             </div>
             <input type="submit" id="btn" value="Send">
         </form>
