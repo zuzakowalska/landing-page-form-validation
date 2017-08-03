@@ -22,9 +22,9 @@ h1 {
 
 input {
   width: 100%;
-  height: 30px;
+  height: 40px;
   display: inline-block;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   border: 1px solid #fff;
   padding: 0 0 0 1em;
   color: #fff;
@@ -45,7 +45,7 @@ input {
     margin-bottom: 2em; }
 
 .check {
-  margin-bottom: 1em; }
+  margin-bottom: 2em; }
 
 label {
   position: relative;
@@ -59,3 +59,12 @@ label input[type=checkbox] {
 
 p {
   margin-top: 2em; }
+
+p#name-required {
+  opacity: 0;
+  font-size: 0.9em;
+  margin: -1.7em 0 1em 1em;
+  color: #d7213b; }
+
+*:focus {
+  outline: none; }
