@@ -7,12 +7,11 @@ body {
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
   background-repeat: no-repeat;
   font-family: "Asap", "serif";
-  color: #606060;
+  color: #fff;
   font-size: 0.8em; }
 
 div.container {
   background-color: rgba(255, 255, 255, 0);
-  border: 1px solid #ffffff;
   margin: 0 auto;
   width: 40vw;
   padding: 1em; }
@@ -38,11 +37,12 @@ input {
     height: 20px;
     cursor: pointer; }
   input[type="submit"] {
-    margin-top: 1em;
     background-color: #fff;
     color: #27263d;
     cursor: pointer;
     height: 50px; }
+  input[type="number"] {
+    margin-bottom: 2em; }
 
 .check {
   margin-bottom: 1em; }
@@ -56,3 +56,6 @@ label input[type=checkbox] {
   position: absolute;
   top: -5px;
   left: 0px; }
+
+p {
+  margin-top: 2em; }
