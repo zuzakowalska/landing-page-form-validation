@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box; }
 
+*:focus {
+  outline: none; }
+
 body {
   height: 100vh;
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
@@ -60,11 +63,13 @@ label input[type=checkbox] {
 p {
   margin-top: 2em; }
 
-p#name-required {
-  opacity: 0;
+p.required {
   font-size: 0.9em;
   margin: -1.7em 0 1em 1em;
   color: #d7213b; }
 
-*:focus {
-  outline: none; }
+p#name-required {
+  opacity: 0; }
+
+p#email-required {
+  opacity: 0; }
