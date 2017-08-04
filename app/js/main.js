@@ -1,10 +1,12 @@
 'use strict';
 
+var agreeOne = document.getElementById("agree-1");
+var agreeTwo = document.getElementById("agree-2");
+
 function validateFields() {
 
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
-    var agree = document.getElementById("agree-1");
     var nameRequired = document.getElementById("name-required");
     var emailRequired = document.getElementById("email-required");
     var checkRequired = document.getElementById("check-required");
@@ -23,9 +25,20 @@ function validateFields() {
     } else {
         emailRequired.style.opacity = "0"; }
     
-    if (!agree.checked) {
+    if (!agreeOne.checked) {
         event.preventDefault();
         checkRequired.style.opacity = "1";
     } else {
     checkRequired.style.opacity = "0"; }
+}
+
+function checkAllBoxes() {
+    var allCheck = document.getElementById("agree-all");
+    if (allCheck.checked) {
+        agreeOne.checked = true;
+        agreeTwo.checked = true;
+    } else {
+        agreeOne.checked = false;
+        agreeTwo.checked = false;
+    }
 }
