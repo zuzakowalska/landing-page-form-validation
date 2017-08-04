@@ -68,6 +68,9 @@ p.required {
   margin: -1.7em 0 1em 1em;
   color: #d7213b; }
 
+p#check-required {
+  opacity: 0; }
+
 p#name-required {
   opacity: 0; }
 

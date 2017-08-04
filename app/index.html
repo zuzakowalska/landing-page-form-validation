@@ -13,28 +13,28 @@
 <body>
     <div class="container">
         <h1>Contact Form</h1>
-        <form action="post" id="form-body" onsubmit="checkTextField();">
+        <form action="post" id="form-body" onsubmit="validateFields();">
             <input type="text" id="name" placeholder="Your Name*">
             <p id="name-required" class="required">Field required</p>
             <input type="email" id="email" placeholder="E-mail*">
             <p id="email-required" class="required">Field required</p>
             <input type="tel" id="phone" placeholder="Phone">
-            
-            <div class="check">
-                <label for="agree-1"><input type="checkbox" id="agree-1" value="agree1">1st agreement*</label>
-            </div>
-
 
             <div class="check">
-                <label for="agree-2"><input type="checkbox" id="agree-2" value="agree2">2nd agreement</label>
+                <label for="agree-1"><input type="checkbox" id="agree-1" >1st agreement*</label>
+            </div>
+            <p id="check-required" class="required">Field required</p>
+
+            <div class="check">
+                <label for="agree-2"><input type="checkbox" id="agree-2" >2nd agreement</label>
             </div>
 
             <div class="check">
-                <label for="agree-all"><input type="checkbox" id="agree-all" value="agreeAll">Check all agreements</label>
+                <label for="agree-all"><input type="checkbox" id="agree-all" >Check all agreements</label>
             </div>
-            
+
             <p>* Required Fields</p>
-            
+
             <input type="submit" id="btn" value="Send">
         </form>
     </div>
